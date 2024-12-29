@@ -21,16 +21,14 @@ This repository is the official implementation of Evolver,  which incorporates L
 
 
 
-## Installation
-    git clone git@github.com:inFaaa/Evolver.git
-    cd Evolover
+## Environment Installation
     pip install -r requirements.txt
 
 
 ## Test
 
-##### Step 1: Extract embedding
-need to run twice, to extract embedding for both test set and training set
+#### Step 1: Extract embedding
+need to run twice, to extract embedding for both the test set and the training set
 
       python src/extract_embed.py --save_path <Your_SAVE_PATH> --root <PATH_TO_DIR_OF_IMAGE_FOLDER> \
       --data_path <PATH_TO_TEST_SET_OR_TRAIN_SET>
