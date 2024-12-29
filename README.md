@@ -20,6 +20,49 @@ This repository is the official implementation of Evolver,  which incorporates L
 ## 😮 Highlights
 
 
+
+## Installation
+    git clone git@github.com:inFaaa/Evolver.git
+    cd Evolover
+    pip install -r requirements.txt
+
+
+## Test
+
+##### Step 1: Extract embedding
+need to run twice, to extract embedding for both test set and training set
+
+      python src/extract_embed.py --save_path <Your_SAVE_PATH> --root <PATH_TO_DIR_OF_IMAGE_FOLDER> \
+      --data_path <PATH_TO_TEST_SET_OR_TRAIN_SET>
+
+#### Step 2: Pair mining
+
+      python src/rank.py --db_embed_path <PATH_TO_TRAIN_EMBEDDING> \
+      --test_embed_path <PATH_TO_TEST_EMBEDDING> \
+      --test_data_path <PATH_TO_TEST_SET> \
+      --train_data_path <PATH_TO_TRAIN_SET> \
+      --save_path <SAVE_PATH> \
+      --top_k <K_MOST_SIMILAR_DATA>
+
+Then specify your hatefulness definition and instruction in <b> inference.py </b>
+
+#### Step 3: EIE
+
+    python inference.py --mode eie \
+    --model_path <MODEL_PATH> \
+    --extract_path <PATH_TO_SAVE_RESULT> \
+    --image_folder <PATH_TO_DIR_OF_IMAGE_FOLDER> \
+    --pool_path <PAIR_MINING_SAVE_PATH> \
+
+#### Step 4: CRA
+
+    python inference.py --mode cra \
+    --model_path <MODEL_PATH> \
+    --test_path <PATH_OF_EXTRACT_RESULT> \
+    --save_path <SAVE_PATH> \
+    --image_folder <PATH_TO_DIR_OF_IMAGE_FOLDER> \
+
+
 ## ✏️ Citation
 If you find our paper and code useful in your research, please consider giving a star :star: and citation :pencil:.
 
@@ -33,4 +76,3 @@ If you find our paper and code useful in your research, please consider giving a
 ```
 
 </a>
-
