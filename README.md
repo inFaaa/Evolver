@@ -17,7 +17,6 @@ This repository is the official implementation of Evolver,  which incorporates L
 
 
 
-## 😮 Highlights
 
 
 
