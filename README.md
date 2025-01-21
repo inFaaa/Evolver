@@ -7,6 +7,7 @@
 <h5 align="center">
 
 [![arXiv](https://img.shields.io/badge/Arxiv-2407.21004-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2407.21004) 
+   [![YouTube](https://img.shields.io/badge/-YouTube-000000?logo=youtube&logoColor=FF0000)](https://www.youtube.com/watch?v=SPloR9BF2-c)
 [![github](https://img.shields.io/github/stars/inFaaa/Evolver.svg?style=social)](https://github.com/inFaaa/Evolver)
 
 </h5>
@@ -16,9 +17,12 @@ This repository is the official implementation of Evolver,  which incorporates L
 </div>
 
 
+# Poster
+<div align=center>
+<img src="assets/evolver_poster_COLING2025.png" width="500px">
+</div>
 
-
-
+Welcome to the COLING 2025 visual presentation at Jan 27, 10:00-11:30 AM EST, our paper id is 1767, if you have any question, we can discuss about it.
 
 ## Environment Installation
     pip install -r requirements.txt
